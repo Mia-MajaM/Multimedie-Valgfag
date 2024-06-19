@@ -1,0 +1,829 @@
+:root {
+  --red: #9a3b3b;
+  --yellow: #e2c799;
+  --notWhite: #f0f0f0;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Anybody";
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  /* font-size: 70px; */
+  font-size: 2.5em;
+  color: var(--red);
+  margin: 0;
+  font-weight: 700;
+}
+
+h2 {
+  /* font-size: 30px; */
+  font-size: 1.4em;
+  color: var(--red);
+  margin: 0;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  /* font-size: 16px; */
+  font-size: 1em;
+  line-height: 1.5;
+  max-width: 75ch;
+  margin: 0;
+}
+
+a {
+  all: unset;
+}
+
+/* Dropshadow */
+
+.dropShadowWhole {
+  filter: drop-shadow(0 5px 4px #00000035);
+}
+
+.dropShadowHalf {
+  filter: drop-shadow(0 -5px 4px #00000035);
+}
+
+/* -------------------------- Hover ----------------------- */
+
+.buttonHoverHalf {
+  /* Knapper med flad bund*/
+  transition: 0.2s ease-in-out;
+}
+
+.buttonHoverHalf:hover {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 1.8em;
+}
+
+.buttonHoverWhole {
+  /* Hele knapper */
+  transition: 0.2s ease-in-out;
+}
+
+.buttonHoverWhole:hover {
+  transform: scale(1.05);
+}
+
+.textHover>ul>li>a:hover {
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 5%;
+  color: var(--yellow);
+}
+
+.nav-bar>ul>li>a.current_page {
+  color: var(--yellow);
+}
+
+#contact-Info>p:hover {
+  color: var(--yellow);
+}
+
+/* --------------------------- Nav ------------------------ */
+
+.nav-bar {
+  margin: 0;
+  overflow: hidden;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 1%;
+}
+
+.nav-bar>ul>li>a>h1 {
+  color: var(--notWhite);
+  font-size: 1.8em;
+  padding-left: 15px;
+  float: right;
+  align-items: center;
+}
+
+.nav-bar>ul {
+  background-color: var(--red);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar>ul>li {
+  font-family: "Anybody";
+  font-size: 1em;
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-bar>ul>li>a {
+  text-decoration: none;
+  color: var(--notWhite);
+  display: block;
+  padding: 1em 3em;
+}
+
+.textHover>ul>li:first-child>a {
+  padding-bottom: 0;
+}
+
+.textHover>ul>li:first-child>a:hover {
+  border-bottom: 0px;
+}
+
+.logo {
+  width: 2vw;
+  color: var(--yellow);
+  padding-bottom: 3%;
+}
+
+/* ---------------------------- Nav end --------------------------- */
+
+/* ----------------------------- Andet ------------------------------------------ */
+.grid-System {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.heroBanner {
+  background-position: 80% 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+
+/* ------------------------- Button------------------------- */
+
+.button {
+  background-color: var(--yellow);
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 20px 0px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+/* ---------------------- Button end --------------------------- */
+
+/* ---------------------------- Index ------------------------------------------ */
+
+#index-Hedder-Section {
+  background-color: var(--red);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#index-Hedder-Img {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 12;
+}
+
+#pensionat-Img {
+  grid-column: 1;
+  position: relative;
+}
+
+#adoption-Img {
+  grid-column: 3;
+  position: relative;
+}
+
+/* --------------------------- hvem er vi ---------------------- */
+
+.button-FP,
+.button-FP-Top {
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  bottom: 0%;
+  width: 80%;
+  margin: 0% 8%;
+}
+
+.button-FP-Top {
+  bottom: 0.7%;
+}
+
+#hvem-Er-Vi-Section {
+  background-color: var(--red);
+  border-radius: 0 0 15px 15px;
+  padding: 5% 0 3% 0;
+}
+
+#hvem-Er-Vi-H1 {
+  text-align: center;
+  grid-column: 1 / span 12;
+  white-space: nowrap;
+  color: #f0f0f0;
+  margin-bottom: 3%;
+}
+
+#button-Hvem-Er-Vi {
+  grid-row: 3;
+  grid-column: 6 / span 2;
+  margin-top: 20%;
+}
+
+#hvem-Er-Vi-P {
+  grid-row: 2;
+  grid-column: 3 / span 5;
+  color: var(--notWhite);
+}
+
+#img-Hvem-Er-Vi {
+  width: 100%;
+  height: 300px;
+  grid-row: 2;
+  grid-column: 8 / span 4;
+}
+
+#three-boxes-Section {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+}
+
+/* ------------------ hvem er vi end ----------------------------- */
+
+/* ---------------------------------- 3 focus entry points bottom  --------------------------------- */
+#fp1-Grid {
+  grid-column: 2 / span 3;
+  position: relative;
+}
+
+#fp2-Grid {
+  grid-column: 5 / span 4;
+  position: relative;
+}
+
+#fp3-Grid {
+  grid-column: 9 / span 3;
+  position: relative;
+}
+
+.focus-entry-points-Img {
+  margin-top: 100px;
+  width: 100%;
+  height: 300px;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 2;
+}
+
+/* ------------------------- 3 focus entry points bottom end --------------------------------------- */
+
+/* ------------------------------------ specifikke dyr page ------------------------------------------------' */
+.backArrow {
+  padding: 3% 0% 0% 3%;
+}
+
+#intro {
+  margin-top: 50px;
+}
+
+#intro-Img {
+  grid-column: 2 / span 5;
+  grid-row: 1 / span 5;
+  width: 100%;
+}
+
+.intro-Text {
+  grid-column: 8 / span 2;
+  color: #000000;
+}
+
+.introTextGender {
+  color: var(--red);
+  margin-bottom: 20%;
+}
+
+.intro-Svar {
+  grid-column: 10 / span 3;
+}
+
+#background {
+  background-color: var(--red);
+  border-radius: 15px 15px 15px 15px;
+  padding: 50px 0 50px 0;
+}
+
+.background-Title {
+  grid-column: 4 / span 3;
+  margin: 5% 0 3% 0;
+  color: #ffffff;
+}
+
+#background-padding {
+  margin: 15% 0 3% 0;
+}
+
+.background-text {
+  margin: 0;
+  grid-column: 4 / span 6;
+  padding: 0;
+  color: var(--notWhite);
+}
+
+#gallery {
+  display: grid;
+  grid-template-rows: 1fr 200px 1fr;
+  margin: 50px;
+  justify-items: center;
+}
+
+#gallery-Pos1 {
+  grid-column: 2 / span 4;
+  grid-row: 1;
+}
+
+#gallery-Pos2 {
+  grid-column: 8 / span 4;
+  grid-row: 1;
+}
+
+#gallery-Pos3 {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 2;
+  z-index: 2;
+  margin-top: auto;
+}
+
+#gallery-Pos4 {
+  display: grid;
+  /* For at fjerne display:block som indsættes af div */
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 2;
+  align-content: center;
+}
+
+#gallery-Pos5 {
+  display: grid;
+  /* For at fjerne display:block som indsættes af div */
+  grid-column: 8 / span 4;
+  grid-row: 2 / span 2;
+  align-content: center;
+}
+
+#adoption-Process {
+  background-color: var(--red);
+}
+
+#adoption-Process-H1 {
+  color: var(--notWhite);
+  grid-column: 1 / span 12;
+  text-align: center;
+  margin: 3%;
+}
+
+#adoption-Process>div>h1 {
+  color: var(--notWhite);
+  margin: 0px;
+  padding-top: 5%;
+}
+
+#adoption-Process>div>p {
+  color: var(--notWhite);
+  padding-bottom: 10%;
+}
+
+#adoption-Process-pos1 {
+  grid-column: 2 / span 2;
+}
+
+#adoption-Process-pos2 {
+  grid-column: 6 / span 2;
+}
+
+#adoption-Process-pos3 {
+  grid-column: 10 / span 2;
+}
+
+#adoption-Process-pos4 {
+  grid-column: 2 / span 2;
+}
+
+#adoption-Process-pos5 {
+  grid-column: 6 / span 2;
+}
+
+#adoption-Process-pos6 {
+  grid-column: 10 / span 2;
+}
+
+/* ------------------------------------ specifikke dyr page end ------------------------------------------------' */
+
+/* ------------------------ other ------------------------------------- */
+
+.h1Title {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  padding-bottom: 0;
+}
+
+/* Icons */
+
+.ITagIcons {
+  filter: invert(35%) sepia(9%) saturate(3623%) hue-rotate(314deg) brightness(90%) contrast(97%);
+  /* width: 50px; */
+  width: 2.5vw;
+}
+
+/* ----------------------- aboutUs starts here ------------------- */
+
+#mainAboutSection {
+  display: grid;
+  column-gap: 5vw;
+  grid-template-columns: 1fr 50%;
+  padding: 5vw;
+  padding-top: 2vw;
+}
+
+/* timeline */
+
+#timelineContainer {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: repeat(60px, 5);
+}
+
+.content {
+  margin: 0 20px;
+}
+
+.content-right {
+  text-align: right;
+  grid-column: 1;
+}
+
+.timeline-middle {
+  position: relative;
+  background: var(--red);
+  grid-column: 2;
+}
+
+.timeline-middle-bottom {
+  position: relative;
+  grid-column: 2;
+}
+
+.timeline-point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+/* contact section */
+
+#contactSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  padding-top: 0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  height: 400px;
+}
+
+#contactH2 {
+  display: flex;
+  justify-content: center;
+}
+
+#contactDivsH2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25%;
+  justify-content: center;
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;
+  column-gap: 2vw;
+  padding: 3%;
+}
+
+.contactDiv>a>p {
+  font-size: 1.5em;
+}
+
+#googleMap {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------ Adoption ----------------------- */
+
+.adoptionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 10%;
+  margin: 5%;
+  margin-bottom: 10%;
+}
+
+.adoptionCards {
+  background-color: var(--yellow);
+  max-width: fit-content;
+}
+
+.adoptionCardGender {
+  color: var(--red);
+  padding-right: 10px;
+  float: right;
+}
+
+.animalInfo>h3>p {
+  grid-column: 1;
+  margin-left: 10px;
+}
+
+.animalInfo>i {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+#filters {
+  display: flex;
+  column-gap: 3%;
+  padding-left: 12%;
+  margin-top: 3%;
+}
+
+#filters>button {
+  border-style: none;
+  background-color: var(--yellow);
+  width: 10vw;
+  height: 30px;
+  text-align: center;
+  font-family: "Anybody";
+  font-size: 1.1em;
+  padding: 0.3%;
+}
+
+/* -------------------- Pensionat ------------------------------- */
+.btn {
+  padding: 10px 25px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  max-width: fit-content;
+}
+
+.btn_TopPensionat {
+  position: fixed;
+  top: 25vh;
+  right: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+.pensionatHeadline {
+  padding: 50px;
+  text-align: center;
+}
+
+.pensionatSectionHeadline {
+  padding: 25px;
+  text-align: center;
+  color: var(--notWhite);
+}
+
+.sectionBackground {
+  background-color: var(--red);
+  border-radius: 10px;
+  color: var(--notWhite);
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pensionatFlex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.prisFlex {
+  display: flex;
+  justify-content: center;
+}
+
+#pensionatHverdagVideo {
+  height: 300px;
+  padding-left: 50px;
+}
+
+.pUppercase {
+  text-transform: uppercase;
+}
+
+.ejerCardInfo {
+  padding: 1% 5%;
+}
+
+.pensionatCardInfo {
+  text-align: center;
+  padding: 5% 0%;
+}
+
+.pensionatUl {
+  list-style-type: none;
+  padding: 0px 100px;
+}
+
+.pensionatUl>li {
+  padding: 10px;
+}
+
+.pensionatCards {
+  background-color: var(--red);
+  max-width: fit-content;
+  border-radius: 5px;
+  color: var(--notWhite);
+}
+
+.MainCardsImg {
+  border-radius: 5px 5px 0px 0px;
+  z-index: -1;
+}
+
+.CardInfo {
+  padding-left: 10px;
+}
+
+.pensionatCardGender {
+  color: var(--yellow);
+  padding-right: 10px;
+  float: right;
+}
+
+.pensionatStaffInfo {
+  margin: 75px;
+}
+
+.pensionatStaffHeadline {
+  padding-bottom: 10px;
+}
+
+.pensionatCardSmall {
+  margin: 0px 40px;
+}
+
+/* --------------------- Karrusel -------------------------- */
+
+.karrusel {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.slideshow {
+  width: 500px;
+  overflow: hidden;
+}
+
+.slideImages {
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slideImages>input {
+  /* Skjuler radio buttons */
+  display: none;
+}
+
+.slideImage {
+  width: 20%;
+  transition: 2s;
+}
+
+.slideImage>img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styrer sliding, MÅ IKKE SLETTES */
+/* Billederne bliver skubbet af margin-left. */
+/* Tilde "~" tjekker alt EFTER den nuværende #position, ikke før, i HTML'en. 
+Så, der kommer margin på når: position1/2/3 etc. er checked og siblingen der har class'en "first", bliver skubbet med 20/40/60 % margin.  */
+#position1:checked~.first {
+  margin-left: 0;
+}
+
+#position2:checked~.first {
+  margin-left: -20%;
+}
+
+#position3:checked~.first {
+  margin-left: -40%;
+}
+
+#position4:checked~.first {
+  margin-left: -60%;
+}
+
+#position5:checked~.first {
+  margin-left: -80%;
+}
+
+/* -------------------- footer ------------------------------- */
+
+.footer {
+  background-color: var(--red);
+  margin-top: 50px;
+  padding: 20px 0 20px 0;
+}
+
+.footer>div>ul>li {
+  font-family: "Anybody";
+  font-size: 25px;
+  display: block;
+  margin: 5px 0 0 10px;
+  grid-column: 1 / span 2;
+}
+
+.footer>div>ul>li>a {
+  text-decoration: none;
+  color: var(--notWhite);
+  cursor: pointer;
+}
+
+#footer-list {
+  grid-column: 1 / span 3;
+}
+
+#footer-list>ul>li {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#google-Maps {
+  grid-column: 5 / span 4;
+  padding: 25px;
+}
+
+#img-Fid-Grid {
+  width: 100%;
+  height: 140px;
+}
+
+#contact-Info {
+  grid-column: 10 / span 3;
+  color: var(--notWhite);
+  cursor: pointer;
+}
+
+#contact-Info>p {
+  margin-top: 10%;
+}
+
+.footer-Icon {
+  width: 80px;
+  height: 80px;
+  color: var(--yellow);
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+/* ---------------------------------------- footer end ----------------------------- */
